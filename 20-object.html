@@ -1,0 +1,37 @@
+<!doctype>
+<html>
+<head>
+    <meta name= "object" content ="">
+    <meta charset = "utf-8">
+    <title>object </title>
+    
+    <script>
+
+        function lengths(a , b)
+        {
+            this.inpu1 = a;
+            this.inpu2 = b;
+
+            this.getarea = function()
+            {
+                return this.inpu1*this.inpu2;
+            }
+        }
+
+        var input1 = prompt("enter the first number");
+        var input2 = prompt("enter the second number");
+
+        var a = new lengths(input1 , input2);
+        var res  = a.getarea();
+        console.log(res);
+
+    </script>
+
+</head>
+<body>
+    <a href = "#" onclick = "alert('this is inline');">heading</h1>
+</body>
+
+
+
+    </html>

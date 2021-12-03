@@ -1,0 +1,51 @@
+<!doctype>
+<html>
+<head>
+    <meta name= "accessing the element" content ="">
+    <meta charset = "utf-8">
+    <title>accessing the element</title>
+    
+    <script>
+           function checkd()
+           {
+               var inputs = document.getElementByTagName("input");
+
+               var message = "your form \n\n";
+
+               for(var i = 0 ; i < inputs.length ; i++)
+               {
+                   if(inputs[i].getAttribute('type') == 'text')
+                   {
+                       message = message + inputs[i].getAttribute('name') + ": ";
+                       message = message + inputs[i].value + "\n";
+                   }
+
+               }
+
+               alert(message);
+           }
+
+
+    </script>
+
+
+</head>
+<body>
+    
+    <form id = "userform" action = "#" >
+
+        <input type = "text" name = "name" id = "txt_name"/>
+        <input type = "text" name = "email" id = "txt_email"/>
+
+        <input type = "button" name = "submit" value ="Submit" onclick ="checkd();"/>
+
+
+    </form>
+    
+
+
+</body>
+
+
+
+    </html>
